@@ -33,8 +33,21 @@ def dic_code(ss,seed=1):
             otlst.append(i)
     otlst=''.join(otlst)        
     return otlst
-  
-  
+
+### 解密部分
+  def dic_uncode(ss,dic_pin):
+    ### rearrange the dic_pin
+    ### change the keys and values
+    d = dict(zip(dic_pin.values(),dic_pin.keys()))
+    otlst=[]
+
+    for i in ss:
+        if(i in d.keys()):
+            otlst.append(d[i])
+        else:
+            otlst.append(i)
+    otlst=''.join(otlst) 
+    print(otlst)
   
   ### example here:
   ss = '''
