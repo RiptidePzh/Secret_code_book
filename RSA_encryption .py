@@ -3,7 +3,7 @@
 
 # In[5]:
 
-
+### RSA 加密方法，通过产生公钥和私钥实现加密交流
 ### 如何判断p是不是质数
 def isPrime(x):
     from math import sqrt
@@ -133,6 +133,7 @@ encryption(ss)
 
 
 decryption('۞ߺŻŻဿ\u0c3c\u0ebfဿ్Ż\u087b\u083f',4259,4819)
+
 
 
 # In[ ]:
